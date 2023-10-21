@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:circularflow_defaultRadius="40dp"
+    tools:context=".DesktopActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/layoutclean"
+        tools:layout_editor_absoluteX="-53dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="60dp"
+        android:text="Witaj na swoim koncie uzytkowniku!"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:layout_margin="10dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        app:layout_constraintBottom_toTopOf="@id/button6"
+        app:layout_constraintTop_toBottomOf="@id/textView2">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:backgroundTint="#EF473A"
+            android:insetLeft="4dp"
+            android:insetTop="4dp"
+            android:insetRight="4dp"
+            android:text="Przelew"
+            android:textSize="20dp"
+            app:cornerRadius="40dp"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="227dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:backgroundTint="#EF473A"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="Kantor"
+            android:textSize="20dp"
+            app:cornerRadius="40dp"
+            tools:layout_editor_absoluteX="253dp"
+            tools:layout_editor_absoluteY="227dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:backgroundTint="#EF473A"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="Saldo"
+            android:textSize="20dp"
+            app:cornerRadius="40dp"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="424dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:backgroundTint="#EF473A"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:text="Historia"
+            android:textSize="20dp"
+            app:cornerRadius="40dp"
+            tools:layout_editor_absoluteX="257dp"
+            tools:layout_editor_absoluteY="424dp" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#EF473A"
+        android:text="Wyloguj"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
