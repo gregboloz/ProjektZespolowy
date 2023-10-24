@@ -13,8 +13,26 @@
         android:theme="@style/Theme.ProjektZespolowy"
         tools:targetApi="31">
         <activity
+            android:name=".AfterKantorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AfterPrzelewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HistoriaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SaldoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".KantorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PrzelewActivity"
+            android:exported="true" />
+        <activity
             android:name=".DesktopActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
